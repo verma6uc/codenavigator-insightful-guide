@@ -56,6 +56,13 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 6% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 221 83% 53%;
+
+    --accent-blue: 221 83% 53%;
+    --accent-blue-foreground: 210 40% 98%;
+    --accent-green: 142 76% 36%;
+    --accent-green-foreground: 0 0% 100%;
+    --accent-red: 0 84% 60%;
+    --accent-red-foreground: 0 0% 100%;
   }
 
   .dark {
@@ -103,6 +110,10 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 5% 96%;
     --sidebar-border: 240 4% 16%;
     --sidebar-ring: 221 83% 53%;
+
+    --accent-blue: 217 91% 60%;
+    --accent-green: 142 76% 42%;
+    --accent-red: 0 84% 60%;
   }
 }
 

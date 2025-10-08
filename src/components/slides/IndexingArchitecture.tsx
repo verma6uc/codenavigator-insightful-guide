@@ -5,10 +5,10 @@ import { Database, Workflow, GitBranch, Cpu } from "lucide-react";
 export const IndexingArchitecture = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-5xl font-bold tracking-tight mb-4">
+      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
         Deep Indexing Architecture
       </h2>
-      <p className="text-xl text-muted-foreground mb-12">
+      <p className="text-xl text-muted-foreground mb-16">
         Why our indexing is different (and better)
       </p>
 
@@ -55,8 +55,8 @@ export const IndexingArchitecture = () => {
         </Card>
 
         {/* CodeNavigator Deep Indexing */}
-        <Card className="p-6 border-4 border-foreground bg-muted">
-          <Badge variant="outline" className="mb-4 border-2 border-foreground">
+        <Card className="p-8 border-4 border-accent-blue bg-accent-blue/10 shadow-xl">
+          <Badge variant="outline" className="mb-4 border-2 border-accent-blue text-accent-blue font-bold">
             ✅ CodeNavigator Deep Indexing
           </Badge>
           <div className="space-y-4">
@@ -88,8 +88,8 @@ export const IndexingArchitecture = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 p-3 bg-background border-l-4 border-l-foreground">
-            <p className="text-xs font-mono font-bold">
+          <div className="mt-4 p-4 bg-background border-l-8 border-l-accent-blue">
+            <p className="text-sm font-mono font-bold text-accent-blue">
               Result: Production-safe refactoring. Zero hallucinations.
             </p>
           </div>
@@ -97,11 +97,11 @@ export const IndexingArchitecture = () => {
       </div>
 
       {/* Technical Deep Dive */}
-      <Card className="max-w-7xl w-full p-8 border-2 border-foreground/20">
-        <h3 className="text-2xl font-bold mb-6 text-center">
+      <Card className="max-w-7xl w-full p-12 border-2 border-foreground/20 shadow-xl">
+        <h3 className="text-4xl font-extrabold mb-8 text-center">
           5-Step Indexing Pipeline
         </h3>
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-6">
           {[
             {
               step: "1",
@@ -139,21 +139,21 @@ export const IndexingArchitecture = () => {
               detail: "Track 12,000 function calls",
             },
           ].map((item) => (
-            <Card key={item.step} className="p-4 border-2 border-foreground/20 text-center">
-              <Badge variant="outline" className="border-2 border-foreground mb-3 text-lg">
+            <Card key={item.step} className="p-6 border-2 border-foreground/20 text-center shadow-lg">
+              <Badge variant="outline" className="border-2 border-accent-blue text-accent-blue mb-4 text-xl font-bold">
                 {item.step}
               </Badge>
-              <h4 className="font-bold mb-2 text-sm">{item.title}</h4>
-              <div className="text-xs text-muted-foreground space-y-2">
-                <div className="font-mono bg-muted p-2 rounded">{item.tech}</div>
-                <div className="font-bold">⚡ {item.metric}</div>
+              <h4 className="font-bold mb-3 text-base">{item.title}</h4>
+              <div className="text-xs text-muted-foreground space-y-3">
+                <div className="font-mono bg-muted p-3 rounded">{item.tech}</div>
+                <div className="font-bold text-accent-blue">⚡ {item.metric}</div>
                 <div className="leading-relaxed">{item.detail}</div>
               </div>
             </Card>
           ))}
         </div>
-        <div className="mt-6 text-center">
-          <Badge variant="outline" className="border-2 border-foreground text-lg px-6 py-2">
+        <div className="mt-8 text-center">
+          <Badge variant="outline" className="border-2 border-accent-blue text-accent-blue text-xl px-8 py-3 font-bold">
             Total: 45 seconds for 1,250 files • Incremental updates in 5 seconds
           </Badge>
         </div>

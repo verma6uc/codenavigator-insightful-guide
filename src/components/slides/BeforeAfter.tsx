@@ -38,42 +38,42 @@ export const BeforeAfter = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-5xl font-bold tracking-tight mb-4">
+      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
         Before vs After
       </h2>
-      <p className="text-xl text-muted-foreground mb-12">
+      <p className="text-xl text-muted-foreground mb-16">
         Real scenarios, real cost savings
       </p>
       
-      <div className="space-y-12 max-w-7xl w-full">
+      <div className="space-y-16 max-w-7xl w-full">
         {scenarios.map((item, idx) => (
-          <div key={idx} className="space-y-4">
-            <Badge variant="outline" className="border-2 border-foreground text-lg px-4 py-2">
+          <div key={idx} className="space-y-6">
+            <Badge variant="outline" className="border-2 border-foreground text-xl px-6 py-3 font-bold">
               Scenario {idx + 1}: {item.scenario}
             </Badge>
             
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-8">
               {/* Before */}
-              <Card className="p-6 border-4 border-destructive/50 bg-destructive/5">
-                <div className="flex items-start gap-3 mb-4">
-                  <AlertTriangle className="h-6 w-6 text-destructive flex-shrink-0 mt-1" />
+              <Card className="p-8 border-8 border-accent-red/50 bg-accent-red/5 shadow-xl">
+                <div className="flex items-start gap-3 mb-6">
+                  <AlertTriangle className="h-8 w-8 text-accent-red flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-bold mb-1">Without CodeNavigator</h3>
+                    <h3 className="text-xl font-extrabold mb-2">Without CodeNavigator</h3>
                     <p className="text-xs text-muted-foreground">AI guessing structure</p>
                   </div>
                 </div>
                 
-                <div className="space-y-3">
-                  <div className="p-3 bg-background border border-foreground/20 rounded">
+                <div className="space-y-4">
+                  <div className="p-4 bg-background border border-foreground/20 rounded">
                     <p className="font-mono text-xs leading-relaxed whitespace-pre-line">
                       {item.without.prompt}<br/><br/>
                       <span className="font-bold">AI:</span> {item.without.ai}
                     </p>
                   </div>
                   
-                  <div className="p-3 bg-destructive/10 border-2 border-destructive rounded">
-                    <p className="text-xs font-bold mb-1">ACTUAL RESULT:</p>
-                    <p className="text-xs leading-relaxed mb-2">{item.without.result}</p>
+                  <div className="p-4 bg-accent-red/10 border-4 border-accent-red rounded">
+                    <p className="text-xs font-bold mb-2">ACTUAL RESULT:</p>
+                    <p className="text-sm leading-relaxed mb-3">{item.without.result}</p>
                     <p className="text-xs text-muted-foreground font-mono">
                       Cost: {item.without.cost}
                     </p>
@@ -82,26 +82,26 @@ export const BeforeAfter = () => {
               </Card>
 
               {/* After */}
-              <Card className="p-6 border-4 border-foreground bg-muted">
-                <div className="flex items-start gap-3 mb-4">
-                  <CheckCircle2 className="h-6 w-6 flex-shrink-0 mt-1" />
+              <Card className="p-8 border-8 border-accent-green bg-accent-green/10 shadow-xl">
+                <div className="flex items-start gap-3 mb-6">
+                  <CheckCircle2 className="h-8 w-8 text-accent-green flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-bold mb-1">With CodeNavigator</h3>
+                    <h3 className="text-xl font-extrabold mb-2">With CodeNavigator</h3>
                     <p className="text-xs text-muted-foreground">AI with MCP tools</p>
                   </div>
                 </div>
                 
-                <div className="space-y-3">
-                  <div className="p-3 bg-background border border-foreground/20 rounded">
+                <div className="space-y-4">
+                  <div className="p-4 bg-background border border-foreground/20 rounded">
                     <p className="font-mono text-xs leading-relaxed whitespace-pre-line">
                       {item.with.prompt}<br/><br/>
                       <span className="font-bold">AI:</span> {item.with.ai}
                     </p>
                   </div>
                   
-                  <div className="p-3 bg-muted border-2 border-foreground rounded">
-                    <p className="text-xs font-bold mb-1">ACTUAL RESULT:</p>
-                    <p className="text-xs leading-relaxed mb-2">{item.with.result}</p>
+                  <div className="p-4 bg-accent-green/10 border-4 border-accent-green rounded">
+                    <p className="text-xs font-bold mb-2">ACTUAL RESULT:</p>
+                    <p className="text-sm leading-relaxed mb-3">{item.with.result}</p>
                     <p className="text-xs text-muted-foreground font-mono">
                       Cost: {item.with.cost}
                     </p>
@@ -113,22 +113,22 @@ export const BeforeAfter = () => {
         ))}
       </div>
 
-      <Card className="max-w-5xl mt-12 p-8 border-l-4 border-l-foreground bg-background">
+      <Card className="max-w-5xl mt-16 p-12 border-l-8 border-l-accent-blue bg-background shadow-xl">
         <div className="text-center">
-          <p className="text-3xl font-bold mb-4">
+          <p className="text-4xl font-extrabold mb-6">
             From guessing to knowing in 0.3 seconds
           </p>
-          <div className="grid grid-cols-3 gap-6 mt-6 pt-6 border-t-2 border-foreground/20">
+          <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t-2 border-foreground/20">
             <div>
-              <div className="text-2xl font-bold">$50K+</div>
+              <div className="text-4xl font-extrabold text-accent-green">$50K+</div>
               <div className="text-sm text-muted-foreground">Prevented per incident</div>
             </div>
             <div>
-              <div className="text-2xl font-bold">3 hours</div>
+              <div className="text-4xl font-extrabold text-accent-green">3 hours</div>
               <div className="text-sm text-muted-foreground">Saved per refactor</div>
             </div>
             <div>
-              <div className="text-2xl font-bold">100%</div>
+              <div className="text-4xl font-extrabold text-accent-blue">100%</div>
               <div className="text-sm text-muted-foreground">Accurate call graphs</div>
             </div>
           </div>

@@ -83,7 +83,7 @@ const PitchDeck = () => {
               size="sm"
               onClick={prevSlide}
               disabled={currentSlide === 0}
-              className="hover:bg-foreground/10"
+              className="hover:bg-accent-blue/10 hover:text-accent-blue"
             >
               <ChevronLeft className="mr-2 h-4 w-4" />
               Previous
@@ -96,7 +96,7 @@ const PitchDeck = () => {
                   onClick={() => setCurrentSlide(index)}
                   className={`h-2 rounded-full transition-all ${
                     index === currentSlide
-                      ? "w-8 bg-foreground"
+                      ? "w-8 bg-accent-blue"
                       : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
@@ -109,7 +109,7 @@ const PitchDeck = () => {
               size="sm"
               onClick={nextSlide}
               disabled={currentSlide === slides.length - 1}
-              className="hover:bg-foreground/10"
+              className="hover:bg-accent-blue/10 hover:text-accent-blue"
             >
               Next
               <ChevronRight className="ml-2 h-4 w-4" />

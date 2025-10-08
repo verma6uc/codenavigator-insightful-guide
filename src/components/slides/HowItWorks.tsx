@@ -40,10 +40,10 @@ export const HowItWorks = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-5xl font-bold tracking-tight mb-4">
+      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
         How It Works
       </h2>
-      <p className="text-xl text-muted-foreground mb-12">
+      <p className="text-xl text-muted-foreground mb-16">
         Deep technical architecture (not just another wrapper)
       </p>
       
@@ -53,32 +53,32 @@ export const HowItWorks = () => {
           return (
             <Card
               key={step.number}
-              className="p-8 border-2 border-foreground/20 relative"
+              className="p-12 border-2 border-foreground/20 relative shadow-lg hover:shadow-xl transition-shadow"
             >
               <Badge
                 variant="outline"
-                className="absolute -top-4 -left-4 h-12 w-12 flex items-center justify-center text-2xl font-bold border-4 border-foreground bg-background"
+                className="absolute -top-5 -left-5 h-14 w-14 flex items-center justify-center text-3xl font-extrabold border-4 border-accent-blue bg-accent-blue text-accent-blue-foreground rounded-full shadow-lg"
               >
                 {step.number}
               </Badge>
               
-              <IconComponent className="h-12 w-12 mb-4" />
+              <IconComponent className="h-14 w-14 mb-6 text-accent-blue" />
               
-              <h3 className="text-2xl font-bold mb-3">
+              <h3 className="text-3xl font-extrabold mb-4">
                 {step.title}
               </h3>
               
-              <p className="text-sm leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-6">
                 {step.description}
               </p>
 
-              <div className="border-l-4 border-l-foreground pl-4 mb-4 bg-muted p-3">
+              <div className="border-l-4 border-l-accent-blue pl-4 mb-6 bg-muted p-4">
                 <p className="text-xs font-mono text-muted-foreground leading-relaxed">
                   {step.technical}
                 </p>
               </div>
 
-              <Badge variant="outline" className="border-2 border-foreground">
+              <Badge variant="outline" className="border-2 border-accent-blue text-accent-blue">
                 ⚡ {step.metric}
               </Badge>
             </Card>

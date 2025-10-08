@@ -69,16 +69,16 @@ export const TechnicalDifferentiation = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-5xl font-bold tracking-tight mb-4">
+      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
         Technical Differentiation
       </h2>
-      <p className="text-xl text-muted-foreground mb-12">
+      <p className="text-xl text-muted-foreground mb-16">
         Why we win (and why it's hard to copy)
       </p>
 
       {/* Competitive Matrix */}
-      <Card className="max-w-7xl w-full p-8 border-2 border-foreground/20 mb-12">
-        <h3 className="text-2xl font-bold mb-6 text-center">
+      <Card className="max-w-7xl w-full p-12 border-2 border-foreground/20 mb-16 shadow-xl">
+        <h3 className="text-4xl font-extrabold mb-8 text-center">
           Competitive Landscape
         </h3>
         <div className="space-y-6">
@@ -101,8 +101,8 @@ export const TechnicalDifferentiation = () => {
                     <p className="text-sm text-muted-foreground">{comp.limitation}</p>
                   </div>
                   <div>
-                    <span className="text-xs font-bold">OUR ADVANTAGE:</span>
-                    <p className="text-sm font-mono bg-muted p-2 rounded border-l-2 border-l-foreground">
+                    <span className="text-xs font-bold text-accent-green">OUR ADVANTAGE:</span>
+                    <p className="text-sm font-mono bg-muted p-3 rounded border-l-4 border-l-accent-green">
                       {comp.ourAdvantage}
                     </p>
                   </div>
@@ -114,20 +114,20 @@ export const TechnicalDifferentiation = () => {
       </Card>
 
       {/* Three Moats */}
-      <h3 className="text-3xl font-bold mb-8">
+      <h3 className="text-5xl font-extrabold mb-12">
         Our Three Moats
       </h3>
-      <div className="grid grid-cols-3 gap-6 max-w-7xl w-full mb-8">
+      <div className="grid grid-cols-3 gap-8 max-w-7xl w-full mb-12">
         {moats.map((moat, idx) => {
           const IconComponent = moat.icon;
           return (
-            <Card key={idx} className="p-6 border-4 border-foreground bg-muted">
-              <IconComponent className="h-10 w-10 mb-4" />
-              <h4 className="text-xl font-bold mb-4">{moat.title}</h4>
-              <ul className="space-y-3">
+            <Card key={idx} className="p-8 border-4 border-accent-blue bg-accent-blue/10 shadow-xl">
+              <IconComponent className="h-12 w-12 mb-6 text-accent-blue" />
+              <h4 className="text-2xl font-extrabold mb-6">{moat.title}</h4>
+              <ul className="space-y-4">
                 {moat.points.map((point, pidx) => (
-                  <li key={pidx} className="text-xs leading-relaxed flex items-start gap-2">
-                    <span className="text-foreground font-bold mt-0.5">•</span>
+                  <li key={pidx} className="text-sm leading-relaxed flex items-start gap-3">
+                    <span className="text-accent-blue font-bold mt-0.5 text-lg">•</span>
                     <span className="text-muted-foreground">{point}</span>
                   </li>
                 ))}
@@ -138,30 +138,30 @@ export const TechnicalDifferentiation = () => {
       </div>
 
       {/* Bottom Metrics */}
-      <Card className="max-w-5xl w-full p-8 border-2 border-foreground/20 bg-background">
-        <h3 className="text-2xl font-bold mb-6 text-center">
+      <Card className="max-w-5xl w-full p-12 border-2 border-foreground/20 bg-background shadow-xl">
+        <h3 className="text-4xl font-extrabold mb-8 text-center">
           Why It's Hard to Copy
         </h3>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-bold mb-2">6 months</div>
+            <div className="text-5xl font-extrabold mb-3 text-accent-blue">6 months</div>
             <div className="text-xs text-muted-foreground">Engineering investment</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold mb-2">15K</div>
+            <div className="text-5xl font-extrabold mb-3 text-accent-blue">15K</div>
             <div className="text-xs text-muted-foreground">Lines of TS compiler code</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold mb-2">1st</div>
+            <div className="text-5xl font-extrabold mb-3 text-accent-blue">1st</div>
             <div className="text-xs text-muted-foreground">Code analysis MCP server</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold mb-2">100%</div>
+            <div className="text-5xl font-extrabold mb-3 text-accent-blue">100%</div>
             <div className="text-xs text-muted-foreground">Accurate call graphs</div>
           </div>
         </div>
-        <div className="mt-8 p-4 border-l-4 border-l-foreground bg-muted">
-          <p className="text-sm text-center">
+        <div className="mt-10 p-6 border-l-8 border-l-accent-blue bg-muted">
+          <p className="text-base text-center leading-relaxed">
             <span className="font-bold">Network effect:</span> Every codebase indexed = better AI for everyone. 
             More repos = better pattern recognition = more valuable tool.
           </p>

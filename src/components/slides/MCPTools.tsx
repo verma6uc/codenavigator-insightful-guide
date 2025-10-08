@@ -47,43 +47,46 @@ export const MCPTools = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-5xl font-bold tracking-tight mb-4">
+      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
         The Magic: MCP Tools
       </h2>
       
-      <p className="text-xl text-muted-foreground mb-12">
+      <p className="text-xl text-muted-foreground mb-16">
         5 tools that give AI superpowers (the exact capabilities developers asked for)
       </p>
       
-      <div className="space-y-6 max-w-6xl w-full">
+      <div className="space-y-8 max-w-6xl w-full">
         {tools.map((tool, index) => (
           <Card
             key={index}
-            className="p-6 border-2 border-foreground/20 border-l-4 border-l-foreground bg-muted"
+            className="p-8 border-2 border-foreground/20 border-l-8 border-l-accent-blue bg-muted shadow-lg"
           >
-            <div className="grid grid-cols-[1fr,2fr] gap-6">
+            <div className="grid grid-cols-[1fr,2fr] gap-8">
               {/* Left: Tool call */}
-              <div className="font-mono space-y-3">
-                <Badge variant="outline" className="border-2 border-foreground mb-2">
+              <div className="font-mono space-y-4">
+                <Badge variant="outline" className="border-2 border-accent-blue text-accent-blue mb-3 font-bold">
                   {tool.name}
                 </Badge>
                 <div className="text-sm font-bold">
-                  {tool.call}
+                  <span className="text-accent-blue">{tool.name}</span>
+                  <span className="text-muted-foreground">(</span>
+                  <span className="text-accent-green">"{tool.call.split('"')[1]}"</span>
+                  <span className="text-muted-foreground">)</span>
                 </div>
                 <div className="text-xs text-muted-foreground leading-relaxed">
-                  <div className="mb-1">{tool.result}</div>
+                  <div className="mb-2">{tool.result}</div>
                   <div>{tool.impact}</div>
                 </div>
               </div>
 
               {/* Right: Context + tech */}
-              <div className="space-y-3 border-l-2 border-foreground/20 pl-6">
+              <div className="space-y-4 border-l-2 border-accent-blue/30 pl-6">
                 <div>
-                  <div className="text-xs font-bold mb-1 text-muted-foreground">USE CASE:</div>
-                  <div className="text-sm">{tool.useCase}</div>
+                  <div className="text-xs font-bold mb-2 text-muted-foreground">USE CASE:</div>
+                  <div className="text-sm leading-relaxed">{tool.useCase}</div>
                 </div>
                 <div>
-                  <div className="text-xs font-bold mb-1 text-muted-foreground">TECHNICAL:</div>
+                  <div className="text-xs font-bold mb-2 text-muted-foreground">TECHNICAL:</div>
                   <div className="text-xs text-muted-foreground font-mono leading-relaxed">
                     {tool.tech}
                   </div>
@@ -94,9 +97,9 @@ export const MCPTools = () => {
         ))}
       </div>
 
-      <Card className="max-w-4xl mt-8 p-6 border-2 border-foreground/20 bg-background">
-        <p className="text-center text-lg">
-          <span className="font-bold">Model Context Protocol (MCP)</span> by Anthropic<br/>
+      <Card className="max-w-4xl mt-12 p-8 border-2 border-foreground/20 bg-background shadow-lg">
+        <p className="text-center text-lg leading-relaxed">
+          <span className="font-bold text-accent-blue">Model Context Protocol (MCP)</span> by Anthropic<br/>
           <span className="text-muted-foreground text-sm">
             Our custom MCP server exposes these tools to any AI that supports MCP (Claude, ChatGPT, local models)
           </span>
