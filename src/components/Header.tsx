@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Code2 } from "lucide-react";
+import { Code2, Moon, Sun } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 export const Header = () => {
+  const { theme, setTheme } = useTheme();
+  
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +32,17 @@ export const Header = () => {
 
           {/* CTA */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="w-9 h-9 p-0"
+            >
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
               Sign In
             </Button>
             <Button size="sm" className="bg-gradient-to-r from-primary to-accent">
