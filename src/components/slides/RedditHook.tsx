@@ -6,10 +6,10 @@ export const RedditHook = () => {
     <div className="space-y-12">
       <div className="text-center space-y-4">
         <h1 className="text-5xl font-bold tracking-tight">
-          We Found This on Reddit Last Week
+          We Posted This to Validate the Problem
         </h1>
         <p className="text-xl text-muted-foreground">
-          A problem so painful, developers are building their own solutions
+          Before building anything, we asked developers what they really wanted
         </p>
       </div>
 
@@ -55,13 +55,15 @@ export const RedditHook = () => {
       </Card>
 
       {/* Key Insight */}
-      <div className="text-center">
+      <div className="text-center space-y-4">
+        <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+          <p className="text-sm font-semibold text-primary">Market Research Strategy</p>
+        </div>
         <p className="text-2xl font-medium text-foreground">
-          "This developer spent <span className="text-primary font-bold">weeks</span> building 
-          a reverse-mapping system just to make AI coding work."
+          We shared our technical approach and <span className="text-primary font-bold">1,200+ developers</span> told us they had the exact same problem.
         </p>
-        <p className="text-xl text-muted-foreground mt-4">
-          And he's not alone.
+        <p className="text-xl text-muted-foreground">
+          300+ comments of validated pain points and feature requests.
         </p>
       </div>
     </div>

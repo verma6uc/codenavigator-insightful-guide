@@ -65,11 +65,15 @@ export const WhatTheyWant = () => {
       </div>
 
       <div className="text-center pt-6 space-y-4">
+        <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-2">
+          <p className="text-sm font-semibold text-primary">Customer Discovery Complete</p>
+        </div>
         <p className="text-2xl font-medium">
-          They're telling us <span className="text-primary font-bold">exactly</span> what to build.
+          We asked what they wanted. <br />
+          <span className="text-primary font-bold">They told us exactly what to build.</span>
         </p>
         <p className="text-xl text-muted-foreground">
-          We just need to productize it.
+          Now we're building it.
         </p>
       </div>
     </div>

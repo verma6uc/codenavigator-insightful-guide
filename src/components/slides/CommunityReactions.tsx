@@ -29,10 +29,10 @@ export const CommunityReactions = () => {
     <div className="space-y-8">
       <div className="text-center space-y-4">
         <h1 className="text-5xl font-bold tracking-tight">
-          The Comments Reveal the Market
+          The Feedback Validated the Market
         </h1>
         <p className="text-xl text-muted-foreground">
-          300+ engaged developers telling us what they need
+          300+ developers responded with their exact pain points
         </p>
       </div>
 
@@ -65,10 +65,13 @@ export const CommunityReactions = () => {
         ))}
       </div>
 
-      <div className="text-center pt-4">
+      <div className="text-center pt-4 space-y-3">
         <p className="text-2xl font-medium">
-          Developers want this to work. <br />
-          <span className="text-primary font-bold">But they're frustrated it doesn't exist as a product.</span>
+          The feedback was clear: <br />
+          <span className="text-primary font-bold">"We need this as a product, not a DIY project."</span>
+        </p>
+        <p className="text-lg text-muted-foreground">
+          Validated demand before writing a single line of product code.
         </p>
       </div>
     </div>
