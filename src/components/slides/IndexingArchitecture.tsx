@@ -88,7 +88,7 @@ export const IndexingArchitecture = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 p-4 bg-background border-l-8 border-l-accent-blue">
+          <div className="mt-4 p-4 border-l-8 border-l-accent-blue">
             <p className="text-sm font-mono font-bold text-accent-blue">
               Result: Production-safe refactoring. Zero hallucinations.
             </p>

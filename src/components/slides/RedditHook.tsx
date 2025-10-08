@@ -14,7 +14,7 @@ export const RedditHook = () => {
       </div>
 
       {/* Reddit Post Card */}
-      <Card className="p-6 border-2 border-foreground/20 bg-background">
+      <Card className="p-6 border-2 border-foreground/20">
         <div className="flex items-start gap-4">
           <div className="flex flex-col items-center gap-1">
             <TrendingUp className="h-5 w-5 text-foreground" />

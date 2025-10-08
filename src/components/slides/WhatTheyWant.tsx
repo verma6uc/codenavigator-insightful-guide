@@ -45,7 +45,7 @@ export const WhatTheyWant = () => {
         {demands.map((demand, index) => (
           <Card 
             key={index}
-            className="p-4 bg-background border border-border"
+            className="p-4 border border-border"
           >
             <div className="flex gap-3">
               <CheckCircle2 className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />

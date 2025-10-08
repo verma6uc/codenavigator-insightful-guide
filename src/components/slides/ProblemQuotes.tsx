@@ -32,7 +32,7 @@ export const ProblemQuotes = () => {
         {quotes.map((quote, index) => (
           <Card 
             key={index} 
-            className="p-5 border-l-4 border-l-foreground bg-background"
+            className="p-5 border-l-4 border-l-foreground"
           >
             <div className="flex gap-3">
               <AlertCircle className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />

@@ -64,7 +64,7 @@ export const BeforeAfter = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="p-4 bg-background border border-foreground/20 rounded">
+                  <div className="p-4 border border-foreground/20 rounded">
                     <p className="font-mono text-xs leading-relaxed whitespace-pre-line">
                       {item.without.prompt}<br/><br/>
                       <span className="font-bold">AI:</span> {item.without.ai}
@@ -92,7 +92,7 @@ export const BeforeAfter = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="p-4 bg-background border border-foreground/20 rounded">
+                  <div className="p-4 border border-foreground/20 rounded">
                     <p className="font-mono text-xs leading-relaxed whitespace-pre-line">
                       {item.with.prompt}<br/><br/>
                       <span className="font-bold">AI:</span> {item.with.ai}
@@ -113,7 +113,7 @@ export const BeforeAfter = () => {
         ))}
       </div>
 
-      <Card className="max-w-5xl mt-16 p-12 border-l-8 border-l-accent-blue bg-background shadow-xl">
+      <Card className="max-w-5xl mt-16 p-12 border-l-8 border-l-accent-blue shadow-xl">
         <div className="text-center">
           <p className="text-4xl font-extrabold mb-6">
             From guessing to knowing in 0.3 seconds

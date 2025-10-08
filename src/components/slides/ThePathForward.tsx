@@ -16,7 +16,7 @@ export const ThePathForward = () => {
       {/* Current State vs Next 90 Days */}
       <div className="grid grid-cols-[1fr,auto,1fr] gap-6 items-center">
         {/* Current State */}
-        <Card className="p-6 bg-background border-2">
+        <Card className="p-6 border-2 border-white/20">
           <div className="text-center mb-4">
             <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-4">
               Current State

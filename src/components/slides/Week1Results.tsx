@@ -45,7 +45,7 @@ export const Week1Results = () => {
         {metrics.map((metric, index) => {
           const Icon = metric.icon;
           return (
-            <Card key={index} className="p-6 bg-background border-2 hover:border-accent-blue/50 transition-colors">
+            <Card key={index} className="p-6 border-2 border-white/20 hover:border-accent-blue/50 transition-colors">
               <div className="flex items-start gap-4">
                 <Icon className={`h-8 w-8 ${metric.color} flex-shrink-0`} />
                 <div>

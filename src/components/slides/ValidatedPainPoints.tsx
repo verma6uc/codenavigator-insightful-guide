@@ -52,7 +52,7 @@ export const ValidatedPainPoints = () => {
           return (
             <Card 
               key={index}
-              className="p-5 bg-background border-l-4 border-l-foreground"
+              className="p-5 border-l-4 border-l-foreground"
             >
               <div className="flex gap-3">
                 <div className="p-2 border border-foreground/30">

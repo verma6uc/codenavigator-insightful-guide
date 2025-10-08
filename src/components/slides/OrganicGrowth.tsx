@@ -42,7 +42,7 @@ export const OrganicGrowth = () => {
         {growthIndicators.map((indicator, index) => {
           const Icon = indicator.icon;
           return (
-            <Card key={index} className="p-6 bg-background border-2 text-center">
+            <Card key={index} className="p-6 border-2 border-white/20 text-center">
               <Icon className={`h-10 w-10 ${indicator.color} mx-auto mb-4`} />
               <div className={`text-5xl font-bold ${indicator.color} mb-2`}>
                 {indicator.metric}

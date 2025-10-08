@@ -42,7 +42,7 @@ export const WhatWeLearned = () => {
         {learnings.map((learning, index) => {
           const Icon = learning.icon;
           return (
-            <Card key={index} className={`p-6 bg-background border-l-4 ${learning.color}`}>
+            <Card key={index} className={`p-6 border-l-4 ${learning.color}`}>
               <div className="flex gap-4">
                 <Icon className="h-8 w-8 text-accent-blue flex-shrink-0" />
                 <div className="flex-1 space-y-3">

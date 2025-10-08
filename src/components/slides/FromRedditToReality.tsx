@@ -15,7 +15,7 @@ export const FromRedditToReality = () => {
 
       {/* Funnel */}
       <div className="flex items-center justify-center gap-6">
-        <Card className="p-6 bg-background border-2">
+        <Card className="p-6 border-2 border-white/20">
           <div className="flex flex-col items-center gap-2">
             <TrendingUp className="h-8 w-8 text-accent-blue" />
             <div className="text-4xl font-bold text-accent-blue">1,200+</div>
@@ -25,7 +25,7 @@ export const FromRedditToReality = () => {
 
         <ArrowRight className="h-8 w-8 text-muted-foreground" />
 
-        <Card className="p-6 bg-background border-2">
+        <Card className="p-6 border-2 border-white/20">
           <div className="flex flex-col items-center gap-2">
             <Users className="h-8 w-8 text-accent-blue" />
             <div className="text-4xl font-bold text-accent-blue">87</div>
@@ -35,7 +35,7 @@ export const FromRedditToReality = () => {
 
         <ArrowRight className="h-8 w-8 text-muted-foreground" />
 
-        <Card className="p-6 bg-accent-blue/10 border-2 border-accent-blue">
+        <Card className="p-6 border-2 border-accent-blue/50">
           <div className="flex flex-col items-center gap-2">
             <Users className="h-8 w-8 text-accent-blue" />
             <div className="text-4xl font-bold text-accent-blue">23</div>

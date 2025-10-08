@@ -138,7 +138,7 @@ export const TechnicalDifferentiation = () => {
       </div>
 
       {/* Bottom Metrics */}
-      <Card className="max-w-5xl w-full p-12 border-2 border-foreground/20 bg-background shadow-xl">
+      <Card className="max-w-5xl w-full p-12 border-2 border-foreground/20 shadow-xl">
         <h3 className="text-4xl font-extrabold mb-8 text-center">
           Why It's Hard to Copy
         </h3>

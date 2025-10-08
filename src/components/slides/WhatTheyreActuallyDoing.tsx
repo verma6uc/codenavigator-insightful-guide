@@ -34,7 +34,7 @@ export const WhatTheyreActuallyDoing = () => {
       {/* Top Queries */}
       <div className="space-y-4">
         {topQueries.map((item, index) => (
-          <Card key={index} className="p-5 bg-background border-2">
+          <Card key={index} className="p-5 border-2 border-white/20">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center">

@@ -36,7 +36,7 @@ export const DIYSolutions = () => {
         </p>
       </div>
 
-      <Card className="p-6 bg-background border-2 border-foreground/20 space-y-4">
+      <Card className="p-6 border-2 border-foreground/20 space-y-4">
         <p className="text-base font-medium">
           Real developers building custom infrastructure:
         </p>
@@ -47,7 +47,7 @@ export const DIYSolutions = () => {
             return (
               <div 
                 key={index}
-                className="flex items-start gap-2 p-3 border border-border/50 bg-background"
+                className="flex items-start gap-2 p-3 border border-border/50"
               >
                 <div className="p-1.5 border border-foreground/30">
                   <Icon className="h-4 w-4 text-foreground" />

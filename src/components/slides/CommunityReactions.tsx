@@ -40,7 +40,7 @@ export const CommunityReactions = () => {
         {reactions.map((reaction, index) => (
           <Card 
             key={index}
-            className="p-4 bg-background border border-border"
+            className="p-4 border border-border"
           >
             <div className="flex gap-3">
               <div className="flex flex-col items-center gap-0.5 pt-0.5">

@@ -97,7 +97,7 @@ export const MCPTools = () => {
         ))}
       </div>
 
-      <Card className="max-w-4xl mt-12 p-8 border-2 border-foreground/20 bg-background shadow-lg">
+      <Card className="max-w-4xl mt-12 p-8 border-2 border-foreground/20 shadow-lg">
         <p className="text-center text-lg leading-relaxed">
           <span className="font-bold text-accent-blue">Model Context Protocol (MCP)</span> by Anthropic<br/>
           <span className="text-muted-foreground text-sm">
