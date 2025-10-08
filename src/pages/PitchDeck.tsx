@@ -7,6 +7,11 @@ import { DIYSolutions } from "@/components/slides/DIYSolutions";
 import { CommunityReactions } from "@/components/slides/CommunityReactions";
 import { ValidatedPainPoints } from "@/components/slides/ValidatedPainPoints";
 import { WhatTheyWant } from "@/components/slides/WhatTheyWant";
+import { SolutionHero } from "@/components/slides/SolutionHero";
+import { MiddleLayerDiagram } from "@/components/slides/MiddleLayerDiagram";
+import { HowItWorks } from "@/components/slides/HowItWorks";
+import { MCPTools } from "@/components/slides/MCPTools";
+import { BeforeAfter } from "@/components/slides/BeforeAfter";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit" },
@@ -15,6 +20,11 @@ const slides = [
   { id: 4, component: CommunityReactions, title: "The Comments Reveal the Market" },
   { id: 5, component: ValidatedPainPoints, title: "The Gap Is Crystal Clear" },
   { id: 6, component: WhatTheyWant, title: "What They Actually Want" },
+  { id: 7, component: SolutionHero, title: "So We Built It" },
+  { id: 8, component: MiddleLayerDiagram, title: "The Missing Middle Layer" },
+  { id: 9, component: HowItWorks, title: "How It Works" },
+  { id: 10, component: MCPTools, title: "MCP Tools" },
+  { id: 11, component: BeforeAfter, title: "Before vs After" },
 ];
 
 const PitchDeck = () => {
