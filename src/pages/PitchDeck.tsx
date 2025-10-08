@@ -12,6 +12,8 @@ import { MiddleLayerDiagram } from "@/components/slides/MiddleLayerDiagram";
 import { HowItWorks } from "@/components/slides/HowItWorks";
 import { MCPTools } from "@/components/slides/MCPTools";
 import { BeforeAfter } from "@/components/slides/BeforeAfter";
+import { IndexingArchitecture } from "@/components/slides/IndexingArchitecture";
+import { TechnicalDifferentiation } from "@/components/slides/TechnicalDifferentiation";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit" },
@@ -25,6 +27,8 @@ const slides = [
   { id: 9, component: HowItWorks, title: "How It Works" },
   { id: 10, component: MCPTools, title: "MCP Tools" },
   { id: 11, component: BeforeAfter, title: "Before vs After" },
+  { id: 12, component: IndexingArchitecture, title: "Deep Indexing Architecture" },
+  { id: 13, component: TechnicalDifferentiation, title: "Technical Differentiation" },
 ];
 
 const PitchDeck = () => {

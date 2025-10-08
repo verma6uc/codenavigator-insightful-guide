@@ -1,21 +1,47 @@
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export const MCPTools = () => {
   const tools = [
     {
+      name: "who_calls()",
       call: 'who_calls("handlePayment")',
       result: "→ Returns: 47 call sites across 12 files",
-      impact: "→ Impact: Payment flow, refund logic, webhook handlers",
+      impact: "→ Context: Payment flow, refund logic, webhook handlers",
+      useCase: "Safe refactoring: Know every caller before changing a function",
+      tech: "Uses: TypeScript Language Service • findReferences API • Symbol resolution",
     },
     {
+      name: "impact_of()",
       call: 'impact_of("src/auth/jwt.ts")',
-      result: "→ Blast radius: 23 files, 89 functions",
+      result: "→ Blast radius: 23 files, 89 functions, 156 call sites",
       impact: "→ Risk: HIGH - Core authentication module",
+      useCase: "Change risk analysis: See downstream impact before modifying",
+      tech: "Uses: Dependency graph traversal • Recursive CTE queries • PostgreSQL",
     },
     {
+      name: "search_code()",
       call: 'search_code("database transaction patterns")',
-      result: "→ Found: 34 transaction handlers",
-      impact: "→ Context: All use sequelize with retry logic",
+      result: "→ Found: 34 transaction handlers in 18 files",
+      impact: "→ Patterns: All use sequelize • 28 have retry logic • 6 missing error handling",
+      useCase: "Semantic search: Find patterns, not just text matches",
+      tech: "Uses: Symbol indexing • AST pattern matching • Framework detection",
+    },
+    {
+      name: "get_file_symbols()",
+      call: 'get_file_symbols("src/api/users.ts", visibility="export")',
+      result: "→ Found: 12 exported symbols (8 functions, 3 types, 1 class)",
+      impact: "→ Public API surface: UserController, createUser(), User type",
+      useCase: "API discovery: Understand public interfaces without reading code",
+      tech: "Uses: TypeScript Compiler API • Type checker • JSDoc extraction",
+    },
+    {
+      name: "file_change_impact_analysis()",
+      call: 'file_change_impact_analysis("src/db/schema.ts")',
+      result: "→ Upstream: 3 migration files • Downstream: 47 model files, 89 services",
+      impact: "→ Breaking change risk: HIGH - Database schema change affects entire app",
+      useCase: "Pre-merge analysis: Understand full impact before code review",
+      tech: "Uses: Bidirectional dependency graph • Impact scoring • Risk classification",
     },
   ];
 
@@ -26,33 +52,54 @@ export const MCPTools = () => {
       </h2>
       
       <p className="text-xl text-muted-foreground mb-12">
-        The exact capabilities developers asked for
+        5 tools that give AI superpowers (the exact capabilities developers asked for)
       </p>
       
-      <div className="space-y-6 max-w-4xl w-full">
+      <div className="space-y-6 max-w-6xl w-full">
         {tools.map((tool, index) => (
           <Card
             key={index}
             className="p-6 border-2 border-foreground/20 border-l-4 border-l-foreground bg-muted"
           >
-            <div className="font-mono space-y-2">
-              <div className="text-lg font-bold mb-3">
-                {tool.call}
+            <div className="grid grid-cols-[1fr,2fr] gap-6">
+              {/* Left: Tool call */}
+              <div className="font-mono space-y-3">
+                <Badge variant="outline" className="border-2 border-foreground mb-2">
+                  {tool.name}
+                </Badge>
+                <div className="text-sm font-bold">
+                  {tool.call}
+                </div>
+                <div className="text-xs text-muted-foreground leading-relaxed">
+                  <div className="mb-1">{tool.result}</div>
+                  <div>{tool.impact}</div>
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground pl-4">
-                {tool.result}
-              </div>
-              <div className="text-sm text-muted-foreground pl-4">
-                {tool.impact}
+
+              {/* Right: Context + tech */}
+              <div className="space-y-3 border-l-2 border-foreground/20 pl-6">
+                <div>
+                  <div className="text-xs font-bold mb-1 text-muted-foreground">USE CASE:</div>
+                  <div className="text-sm">{tool.useCase}</div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold mb-1 text-muted-foreground">TECHNICAL:</div>
+                  <div className="text-xs text-muted-foreground font-mono leading-relaxed">
+                    {tool.tech}
+                  </div>
+                </div>
               </div>
             </div>
           </Card>
         ))}
       </div>
 
-      <Card className="max-w-3xl mt-12 p-4 border-2 border-foreground/20 bg-background">
-        <p className="text-center text-muted-foreground">
-          "The tools developers asked for in those Reddit threads"
+      <Card className="max-w-4xl mt-8 p-6 border-2 border-foreground/20 bg-background">
+        <p className="text-center text-lg">
+          <span className="font-bold">Model Context Protocol (MCP)</span> by Anthropic<br/>
+          <span className="text-muted-foreground text-sm">
+            Our custom MCP server exposes these tools to any AI that supports MCP (Claude, ChatGPT, local models)
+          </span>
         </p>
       </Card>
     </div>
