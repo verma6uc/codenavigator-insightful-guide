@@ -143,21 +143,21 @@ export const TechnicalDifferentiation = () => {
           Why It's Hard to Copy
         </h3>
         <div className="grid grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-5xl font-extrabold mb-3 text-accent-blue">6 months</div>
-            <div className="text-xs text-muted-foreground">Engineering investment</div>
+          <div className="flex flex-col items-center justify-start">
+            <div className="text-5xl font-extrabold mb-4 text-accent-blue leading-none">6 months</div>
+            <div className="text-xs text-muted-foreground text-center">Engineering investment</div>
           </div>
-          <div className="text-center">
-            <div className="text-5xl font-extrabold mb-3 text-accent-blue">15K</div>
-            <div className="text-xs text-muted-foreground">Lines of TS compiler code</div>
+          <div className="flex flex-col items-center justify-start">
+            <div className="text-5xl font-extrabold mb-4 text-accent-blue leading-none">15K</div>
+            <div className="text-xs text-muted-foreground text-center">Lines of TS compiler code</div>
           </div>
-          <div className="text-center">
-            <div className="text-5xl font-extrabold mb-3 text-accent-blue">1st</div>
-            <div className="text-xs text-muted-foreground">Code analysis MCP server</div>
+          <div className="flex flex-col items-center justify-start">
+            <div className="text-5xl font-extrabold mb-4 text-accent-blue leading-none">1st</div>
+            <div className="text-xs text-muted-foreground text-center">Code analysis MCP server</div>
           </div>
-          <div className="text-center">
-            <div className="text-5xl font-extrabold mb-3 text-accent-blue">100%</div>
-            <div className="text-xs text-muted-foreground">Accurate call graphs</div>
+          <div className="flex flex-col items-center justify-start">
+            <div className="text-5xl font-extrabold mb-4 text-accent-blue leading-none">100%</div>
+            <div className="text-xs text-muted-foreground text-center">Accurate call graphs</div>
           </div>
         </div>
         <div className="mt-10 p-6 border-l-8 border-l-accent-blue bg-muted">
