@@ -31,31 +31,31 @@ const demands = [
 
 export const WhatTheyWant = () => {
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight">
+    <div className="space-y-6">
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl font-bold tracking-tight">
           What They Actually Want
         </h1>
-        <p className="text-xl text-muted-foreground">
-          Validated demand from the community
+        <p className="text-lg text-muted-foreground">
+          Validated demand from 300+ developers
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
         {demands.map((demand, index) => (
           <Card 
             key={index}
-            className="p-6 bg-card/50 backdrop-blur hover:bg-card/80 transition-colors"
+            className="p-4 bg-background border border-border"
           >
-            <div className="flex gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex gap-3">
+              <CheckCircle2 className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />
               
-              <div className="flex-1 space-y-2">
-                <h3 className="text-xl font-bold">{demand.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+              <div className="flex-1 space-y-1.5">
+                <h3 className="text-base font-bold">{demand.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {demand.description}
                 </p>
-                <code className="block text-sm bg-muted px-3 py-2 rounded-md mt-2 font-mono">
+                <code className="block text-xs bg-muted px-2 py-1.5 font-mono border border-border">
                   {demand.quote}
                 </code>
               </div>
@@ -64,15 +64,14 @@ export const WhatTheyWant = () => {
         ))}
       </div>
 
-      <div className="text-center pt-6 space-y-4">
-        <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-2">
-          <p className="text-sm font-semibold text-primary">Customer Discovery Complete</p>
+      <div className="text-center pt-4 space-y-2">
+        <div className="inline-block px-4 py-1.5 border-2 border-foreground mb-2">
+          <p className="text-xs font-bold uppercase tracking-wider">Customer Discovery Complete</p>
         </div>
-        <p className="text-2xl font-medium">
-          We asked what they wanted. <br />
-          <span className="text-primary font-bold">They told us exactly what to build.</span>
+        <p className="text-xl font-medium">
+          They told us exactly what to build.
         </p>
-        <p className="text-xl text-muted-foreground">
+        <p className="text-lg font-bold">
           Now we're building it.
         </p>
       </div>

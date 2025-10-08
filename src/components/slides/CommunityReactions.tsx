@@ -26,37 +26,35 @@ const reactions = [
 
 export const CommunityReactions = () => {
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight">
+    <div className="space-y-6">
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl font-bold tracking-tight">
           The Feedback Validated the Market
         </h1>
-        <p className="text-xl text-muted-foreground">
-          300+ developers responded with their exact pain points
+        <p className="text-lg text-muted-foreground">
+          300+ developers responded with exact pain points
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 gap-3">
         {reactions.map((reaction, index) => (
           <Card 
             key={index}
-            className="p-6 bg-card/50 backdrop-blur hover:bg-card/80 transition-colors"
+            className="p-4 bg-background border border-border"
           >
-            <div className="flex gap-4">
-              <div className="flex flex-col items-center gap-1 pt-1">
-                <TrendingUp className="h-4 w-4 text-primary" />
-                <span className="text-sm font-bold text-primary">{reaction.upvotes}</span>
+            <div className="flex gap-3">
+              <div className="flex flex-col items-center gap-0.5 pt-0.5">
+                <TrendingUp className="h-4 w-4 text-foreground" />
+                <span className="text-sm font-bold">{reaction.upvotes}</span>
               </div>
               
-              <div className="flex-1 space-y-3">
-                <blockquote className="text-base leading-relaxed">
+              <div className="flex-1 space-y-2">
+                <blockquote className="text-sm leading-relaxed">
                   "{reaction.quote}"
                 </blockquote>
-                <div className="flex items-center gap-2 text-sm">
-                  <MessageSquare className="h-4 w-4 text-muted-foreground" />
-                  <span className="font-medium text-muted-foreground">
-                    Translation:
-                  </span>
+                <div className="flex items-center gap-2 text-xs">
+                  <MessageSquare className="h-3 w-3 text-muted-foreground" />
+                  <span className="font-medium text-muted-foreground">Translation:</span>
                   <span className="text-foreground">{reaction.insight}</span>
                 </div>
               </div>
@@ -65,13 +63,12 @@ export const CommunityReactions = () => {
         ))}
       </div>
 
-      <div className="text-center pt-4 space-y-3">
-        <p className="text-2xl font-medium">
-          The feedback was clear: <br />
-          <span className="text-primary font-bold">"We need this as a product, not a DIY project."</span>
+      <div className="text-center pt-3 space-y-2">
+        <p className="text-xl font-medium">
+          The feedback was clear:
         </p>
-        <p className="text-lg text-muted-foreground">
-          Validated demand before writing a single line of product code.
+        <p className="text-lg font-bold">
+          "We need this as a product, not a DIY project."
         </p>
       </div>
     </div>

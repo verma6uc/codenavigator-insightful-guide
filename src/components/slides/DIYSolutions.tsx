@@ -26,46 +26,46 @@ const solutions = [
 
 export const DIYSolutions = () => {
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight">
+    <div className="space-y-6">
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl font-bold tracking-tight">
           What They're Actually Building
         </h1>
-        <p className="text-xl text-muted-foreground">
+        <p className="text-lg text-muted-foreground">
           DIY solutions from scratch
         </p>
       </div>
 
-      <Card className="p-8 bg-card/50 backdrop-blur space-y-6">
-        <p className="text-lg text-muted-foreground">
-          Real developers are building custom infrastructure:
+      <Card className="p-6 bg-background border-2 border-foreground/20 space-y-4">
+        <p className="text-base font-medium">
+          Real developers building custom infrastructure:
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3">
           {solutions.map((solution, index) => {
             const Icon = solution.icon;
             return (
               <div 
                 key={index}
-                className="flex items-start gap-3 p-4 rounded-lg border border-border/50 bg-background/50"
+                className="flex items-start gap-2 p-3 border border-border/50 bg-background"
               >
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Icon className="h-5 w-5 text-primary" />
+                <div className="p-1.5 border border-foreground/30">
+                  <Icon className="h-4 w-4 text-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">{solution.title}</h3>
-                  <p className="text-sm text-muted-foreground">{solution.description}</p>
+                  <h3 className="font-semibold text-sm mb-0.5">{solution.title}</h3>
+                  <p className="text-xs text-muted-foreground">{solution.description}</p>
                 </div>
               </div>
             );
           })}
         </div>
 
-        <div className="pt-4 space-y-3">
-          <p className="text-lg font-medium">Plus MCP servers to expose:</p>
+        <div className="pt-2 space-y-2">
+          <p className="text-sm font-medium">Plus MCP servers exposing:</p>
           <div className="flex flex-wrap gap-2">
-            {['who_calls()', 'impact_of()', 'search_code()', 'diff_spec_vs_code()'].map((method) => (
-              <code key={method} className="px-3 py-1 rounded-md bg-muted font-mono text-sm">
+            {['who_calls()', 'impact_of()', 'search_code()'].map((method) => (
+              <code key={method} className="px-2 py-1 border border-foreground/30 font-mono text-xs">
                 {method}
               </code>
             ))}
@@ -73,11 +73,11 @@ export const DIYSolutions = () => {
         </div>
       </Card>
 
-      <div className="text-center space-y-4">
-        <p className="text-2xl font-bold text-primary">
-          This developer spent MONTHS building this.
+      <div className="text-center space-y-2">
+        <p className="text-xl font-bold">
+          MONTHS of work per developer.
         </p>
-        <p className="text-xl text-muted-foreground">
+        <p className="text-base text-muted-foreground">
           And it only works for their specific tech stack.
         </p>
       </div>

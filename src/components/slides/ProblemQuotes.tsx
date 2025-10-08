@@ -3,46 +3,46 @@ import { AlertCircle } from "lucide-react";
 
 const quotes = [
   {
-    text: "Claude analyzed the files I showed it and suggested what looked like clean, elegant code. I trusted it. Then came the testing. The changes had unknowingly broken a critical batch job that processed user data overnight, crashed the API that relied on a specific response format, and somehow interfered with a legacy import system that still handled 30% of our enterprise customers.",
+    text: "Claude suggested clean, elegant code. I trusted it. Then testing revealed it broke a critical batch job, crashed the API, and interfered with a legacy import system handling 30% of enterprise customers.",
     impact: "Production disaster from 'elegant' code",
   },
   {
-    text: "I was thrown into a project I knew nothing about... a sprawling codebase with years of accumulated business logic, edge cases, and interconnected systems. Claude Code isn't dumb, it's context-starved.",
-    impact: "AI can't see hidden dependencies",
+    text: "Claude Code isn't dumb, it's context-starved. It had no idea about hidden dependencies and business context.",
+    impact: "AI can't see the full picture",
   },
   {
-    text: "After 4 weeks of vibe coding, I realized I was losing a grip on the codebase and the 'why' behind the code. The code wasn't wrong in isolation. It just had no idea about the hidden dependencies and business context that made our system tick.",
+    text: "After 4 weeks of vibe coding, I was losing grip on the codebase and the 'why' behind the code.",
     impact: "Loss of control and understanding",
   },
 ];
 
 export const ProblemQuotes = () => {
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight">
+    <div className="space-y-6">
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl font-bold tracking-tight">
           The Problem, In Their Words
         </h1>
-        <p className="text-xl text-muted-foreground">
+        <p className="text-lg text-muted-foreground">
           Real developers, real pain points
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {quotes.map((quote, index) => (
           <Card 
             key={index} 
-            className="p-6 border-l-4 border-l-destructive bg-card/50 backdrop-blur hover:bg-card/80 transition-colors"
+            className="p-5 border-l-4 border-l-foreground bg-background"
           >
-            <div className="flex gap-4">
-              <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-1" />
-              <div className="space-y-3">
-                <blockquote className="text-lg leading-relaxed italic">
+            <div className="flex gap-3">
+              <AlertCircle className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />
+              <div className="space-y-2">
+                <blockquote className="text-base leading-relaxed italic">
                   "{quote.text}"
                 </blockquote>
                 <div className="flex items-center gap-2">
                   <div className="h-px flex-1 bg-border" />
-                  <span className="text-sm font-semibold text-destructive">
+                  <span className="text-xs font-bold uppercase tracking-wider">
                     {quote.impact}
                   </span>
                 </div>
@@ -52,9 +52,9 @@ export const ProblemQuotes = () => {
         ))}
       </div>
 
-      <div className="text-center pt-6">
-        <p className="text-2xl font-medium">
-          This is happening to <span className="text-primary font-bold">thousands of developers</span>, every single day.
+      <div className="text-center pt-4">
+        <p className="text-xl font-medium">
+          Happening to <span className="font-bold underline decoration-2">thousands of developers</span>, every day.
         </p>
       </div>
     </div>

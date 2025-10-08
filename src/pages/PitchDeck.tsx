@@ -35,23 +35,26 @@ const PitchDeck = () => {
   const CurrentSlideComponent = slides[currentSlide].component;
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="h-screen bg-background flex flex-col overflow-hidden">
       {/* Slide Content */}
-      <div className="flex-1 flex items-center justify-center p-8">
-        <div className="w-full max-w-6xl animate-fade-in">
-          <CurrentSlideComponent />
+      <div className="flex-1 flex items-center justify-center p-8 overflow-hidden">
+        <div className="w-full max-w-6xl h-full flex items-center justify-center animate-fade-in">
+          <div className="w-full max-h-full overflow-y-auto">
+            <CurrentSlideComponent />
+          </div>
         </div>
       </div>
 
       {/* Navigation */}
-      <div className="border-t border-border/40 bg-background/95 backdrop-blur">
-        <div className="container mx-auto px-8 py-6">
+      <div className="border-t border-border bg-background">
+        <div className="container mx-auto px-8 py-4">
           <div className="flex items-center justify-between">
             <Button
               variant="ghost"
               size="sm"
               onClick={prevSlide}
               disabled={currentSlide === 0}
+              className="hover:bg-foreground/10"
             >
               <ChevronLeft className="mr-2 h-4 w-4" />
               Previous
@@ -64,7 +67,7 @@ const PitchDeck = () => {
                   onClick={() => setCurrentSlide(index)}
                   className={`h-2 rounded-full transition-all ${
                     index === currentSlide
-                      ? "w-8 bg-primary"
+                      ? "w-8 bg-foreground"
                       : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
@@ -77,6 +80,7 @@ const PitchDeck = () => {
               size="sm"
               onClick={nextSlide}
               disabled={currentSlide === slides.length - 1}
+              className="hover:bg-foreground/10"
             >
               Next
               <ChevronRight className="ml-2 h-4 w-4" />
