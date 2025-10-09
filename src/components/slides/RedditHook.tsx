@@ -49,7 +49,7 @@ export const RedditHook = () => {
           <p className="text-xs font-bold uppercase tracking-wider">Market Research</p>
         </div>
         <p className="text-xl font-medium text-foreground">
-          We shared our approach and <span className="font-bold underline decoration-2">1,200+ developers</span> validated the problem.
+          We shared our approach and <span className="font-bold underline decoration-2">1,200+ developers</span> validated the pain.
         </p>
         <p className="text-base text-muted-foreground">
           300+ comments revealing pain points and feature requests.
