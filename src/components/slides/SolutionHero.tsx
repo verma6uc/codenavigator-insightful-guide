@@ -10,11 +10,7 @@ export const SolutionHero = () => {
             Built in 6 months • Live in production • 45,000 files indexed
           </Badge>
           
-          <h1 className="text-8xl font-extrabold tracking-tight mb-8">
-            So We Built It
-          </h1>
-          
-          <div className="text-6xl font-extrabold mb-12 border-l-8 border-l-accent-blue pl-8 inline-block">
+          <div className="text-9xl font-extrabold mb-12 border-l-8 border-l-accent-blue pl-8 inline-block">
             Glue.tools
           </div>
           
