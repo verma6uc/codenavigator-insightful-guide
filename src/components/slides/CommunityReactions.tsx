@@ -29,7 +29,7 @@ export const CommunityReactions = () => {
     <div className="space-y-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">
-          The Feedback Validated the Market
+          Real world feedback validates the Problem
         </h1>
         <p className="text-lg text-muted-foreground">
           300+ developers responded with exact pain points
