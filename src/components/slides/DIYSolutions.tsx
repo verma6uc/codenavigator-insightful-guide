@@ -29,7 +29,7 @@ export const DIYSolutions = () => {
     <div className="space-y-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">
-          What They're Actually Building
+          Current State
         </h1>
         <p className="text-lg text-muted-foreground">
           DIY solutions from scratch
