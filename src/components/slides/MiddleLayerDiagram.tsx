@@ -81,7 +81,7 @@ export const MiddleLayerDiagram = () => {
             </p>
           </Card>
         </div>
-        <div className="mt-6 text-base font-bold text-center">
+        <div className="mt-6 text-xl font-extrabold text-center">
           Result: Truth, not guesses. Production-safe code generation.
         </div>
       </div>
