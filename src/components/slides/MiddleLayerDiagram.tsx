@@ -28,7 +28,7 @@ export const MiddleLayerDiagram = () => {
             <p className="text-sm font-mono">No semantic index</p>
           </Card>
         </div>
-        <div className="mt-6 text-base text-muted-foreground text-center">
+        <div className="mt-6 text-xl font-extrabold text-center text-accent-red">
           Result: Hallucinations, breaking changes, incorrect assumptions
         </div>
       </div>
