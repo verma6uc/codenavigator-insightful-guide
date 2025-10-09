@@ -6,7 +6,7 @@ export const RedditHook = () => {
     <div className="space-y-8">
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">
-          We Posted This to Validate the Problem
+          Discovery
         </h1>
         <p className="text-lg text-muted-foreground">
           Before building anything, we asked developers what they really wanted
