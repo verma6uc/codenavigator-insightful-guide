@@ -42,7 +42,7 @@ export const BeforeAfter = () => {
         Before vs After
       </h2>
       <p className="text-xl text-muted-foreground mb-16">
-        Real scenarios, real cost savings
+        Real scenarios, Real Impact
       </p>
       
       <div className="space-y-16 max-w-7xl w-full">
