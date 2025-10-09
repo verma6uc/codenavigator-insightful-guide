@@ -8,7 +8,8 @@ export const MCPTools = () => {
       call: 'who_calls("handlePayment")',
       result: "→ Returns: 47 call sites across 12 files",
       impact: "→ Context: Payment flow, refund logic, webhook handlers",
-      useCase: "Safe refactoring: Know every caller before changing a function",
+      header: "Safe refactoring",
+      description: "Know every caller before changing a function",
       tech: "Uses: TypeScript Language Service • findReferences API • Symbol resolution",
     },
     {
@@ -16,7 +17,8 @@ export const MCPTools = () => {
       call: 'impact_of("src/auth/jwt.ts")',
       result: "→ Blast radius: 23 files, 89 functions, 156 call sites",
       impact: "→ Risk: HIGH - Core authentication module",
-      useCase: "Change risk analysis: See downstream impact before modifying",
+      header: "Change risk analysis",
+      description: "See downstream impact before modifying",
       tech: "Uses: Dependency graph traversal • Recursive CTE queries • PostgreSQL",
     },
     {
@@ -24,7 +26,8 @@ export const MCPTools = () => {
       call: 'search_code("database transaction patterns")',
       result: "→ Found: 34 transaction handlers in 18 files",
       impact: "→ Patterns: All use sequelize • 28 have retry logic • 6 missing error handling",
-      useCase: "Semantic search: Find patterns, not just text matches",
+      header: "Semantic search",
+      description: "Find patterns, not just text matches",
       tech: "Uses: Symbol indexing • AST pattern matching • Framework detection",
     },
     {
@@ -32,7 +35,8 @@ export const MCPTools = () => {
       call: 'get_file_symbols("src/api/users.ts", visibility="export")',
       result: "→ Found: 12 exported symbols (8 functions, 3 types, 1 class)",
       impact: "→ Public API surface: UserController, createUser(), User type",
-      useCase: "API discovery: Understand public interfaces without reading code",
+      header: "API discovery",
+      description: "Understand public interfaces without reading code",
       tech: "Uses: TypeScript Compiler API • Type checker • JSDoc extraction",
     },
     {
@@ -40,7 +44,8 @@ export const MCPTools = () => {
       call: 'file_change_impact_analysis("src/db/schema.ts")',
       result: "→ Upstream: 3 migration files • Downstream: 47 model files, 89 services",
       impact: "→ Breaking change risk: HIGH - Database schema change affects entire app",
-      useCase: "Pre-merge analysis: Understand full impact before code review",
+      header: "Pre-merge analysis",
+      description: "Understand full impact before code review",
       tech: "Uses: Bidirectional dependency graph • Impact scoring • Risk classification",
     },
   ];
@@ -82,8 +87,8 @@ export const MCPTools = () => {
               {/* Right: Context + tech */}
               <div className="space-y-4 border-l-2 border-accent-blue/30 pl-6">
                 <div>
-                  <div className="text-xs font-bold mb-2 text-muted-foreground">USE CASE:</div>
-                  <div className="text-sm leading-relaxed">{tool.useCase}</div>
+                  <div className="text-base font-bold mb-2">{tool.header}</div>
+                  <div className="text-sm leading-relaxed text-muted-foreground">{tool.description}</div>
                 </div>
                 <div>
                   <div className="text-xs font-bold mb-2 text-muted-foreground">TECHNICAL:</div>
