@@ -37,12 +37,7 @@ const slides = [
   { id: 12, component: WhatTheyreActuallyDoing, title: "What They're Actually Doing", section: "Solution" },
   { id: 13, component: IndexingArchitecture, title: "Deep Indexing Architecture", section: "Solution" },
   { id: 14, component: TechnicalDifferentiation, title: "Technical Differentiation", section: "Solution" },
-  { id: 15, component: FromRedditToReality, title: "From Reddit to Reality", section: "Traction" },
-  { id: 16, component: Week1Results, title: "Week 1 Results", section: "Traction" },
-  { id: 17, component: TheMoneyQuote, title: "The Money Quote", section: "Traction" },
-  { id: 18, component: OrganicGrowth, title: "Organic Growth", section: "Traction" },
-  { id: 19, component: WhatWeLearned, title: "What We Learned", section: "Traction" },
-  { id: 20, component: ThePathForward, title: "The Path Forward", section: "Traction" },
+  { id: 15, component: ThePathForward, title: "The Path Forward", section: "Traction" },
 ];
 
 const sections = [
