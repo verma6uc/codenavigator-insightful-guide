@@ -28,27 +28,21 @@ export const ProblemQuotes = () => {
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-6">
         {quotes.map((quote, index) => (
-          <Card 
-            key={index} 
-            className="p-5 border-l-4 border-l-foreground"
-          >
-            <div className="flex gap-3">
-              <AlertCircle className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />
-              <div className="space-y-2">
-                <blockquote className="text-base leading-relaxed italic">
-                  "{quote.text}"
-                </blockquote>
-                <div className="flex items-center gap-2">
-                  <div className="h-px flex-1 bg-border" />
-                  <span className="text-xs font-bold uppercase tracking-wider">
-                    {quote.impact}
-                  </span>
-                </div>
-              </div>
+          <div key={index} className="space-y-3">
+            <div className="flex items-center gap-3">
+              <AlertCircle className="h-5 w-5 text-accent-red flex-shrink-0" />
+              <h2 className="text-xl font-bold tracking-tight">
+                {quote.impact}
+              </h2>
             </div>
-          </Card>
+            <Card className="p-5 border-l-4 border-l-accent-red">
+              <blockquote className="text-base leading-relaxed italic">
+                "{quote.text}"
+              </blockquote>
+            </Card>
+          </div>
         ))}
       </div>
 
