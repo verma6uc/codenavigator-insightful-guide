@@ -55,7 +55,7 @@ export const CommunityReactions = () => {
                 <div className="flex items-center gap-2 text-xs">
                   <MessageSquare className="h-3 w-3 text-muted-foreground" />
                   <span className="font-medium text-muted-foreground">Translation:</span>
-                  <span className="text-foreground">{reaction.insight}</span>
+                  <span className="text-foreground font-bold">{reaction.insight}</span>
                 </div>
               </div>
             </div>
