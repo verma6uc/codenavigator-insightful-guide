@@ -29,7 +29,7 @@ export const OrganicGrowth = () => {
   return (
     <div className="space-y-8">
       <div className="text-center space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">
+        <h1 className="text-4xl font-extrabold tracking-tight">
           Organic Growth is Already Happening
         </h1>
         <p className="text-lg text-muted-foreground">

@@ -29,7 +29,7 @@ export const WhatWeLearned = () => {
   return (
     <div className="space-y-8">
       <div className="text-center space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">
+        <h1 className="text-4xl font-extrabold tracking-tight">
           What We Learned
         </h1>
         <p className="text-lg text-muted-foreground">

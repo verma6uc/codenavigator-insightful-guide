@@ -5,7 +5,7 @@ export const ThePathForward = () => {
   return (
     <div className="space-y-8">
       <div className="text-center space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">
+        <h1 className="text-4xl font-extrabold tracking-tight">
           The Path Forward
         </h1>
         <p className="text-lg text-muted-foreground">

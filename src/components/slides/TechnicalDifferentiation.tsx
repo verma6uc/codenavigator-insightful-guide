@@ -69,7 +69,7 @@ export const TechnicalDifferentiation = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
-      <h2 className="text-7xl font-extrabold tracking-tight mb-6">
+      <h2 className="text-4xl font-extrabold tracking-tight mb-6">
         Technical Differentiation
       </h2>
       <p className="text-xl text-muted-foreground mb-16">
