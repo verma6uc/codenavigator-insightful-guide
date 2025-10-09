@@ -15,7 +15,7 @@ export const SolutionHero = () => {
           </h1>
           
           <div className="text-6xl font-extrabold mb-12 border-l-8 border-l-accent-blue pl-8 inline-block">
-            CodeNavigator.io
+            Glue.tools
           </div>
           
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">

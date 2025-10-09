@@ -54,10 +54,10 @@ export const IndexingArchitecture = () => {
           </div>
         </Card>
 
-        {/* CodeNavigator Deep Indexing */}
+        {/* Glue.tools Deep Indexing */}
         <Card className="p-8 border-4 border-accent-blue bg-accent-blue/10 shadow-xl">
           <Badge variant="outline" className="mb-4 border-2 border-accent-blue text-accent-blue font-bold">
-            ✅ CodeNavigator Deep Indexing
+            ✅ Glue.tools Deep Indexing
           </Badge>
           <div className="space-y-4">
             <div className="flex items-start gap-3">

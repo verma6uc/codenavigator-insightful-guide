@@ -12,7 +12,7 @@ export const MiddleLayerDiagram = () => {
         Why AI hallucinates about code (and how we fix it)
       </p>
       
-      {/* Without CodeNavigator */}
+      {/* Without Glue.tools */}
       <div className="mb-12 w-full max-w-6xl">
         <Badge variant="outline" className="mb-6 border-2 border-accent-red text-accent-red font-semibold px-4 py-2">
           ❌ Current State: AI → Codebase (Direct)
@@ -33,10 +33,10 @@ export const MiddleLayerDiagram = () => {
         </div>
       </div>
 
-      {/* With CodeNavigator */}
+      {/* With Glue.tools */}
       <div className="w-full max-w-6xl">
         <Badge variant="outline" className="mb-6 border-2 border-accent-blue text-accent-blue font-semibold px-4 py-2">
-          ✅ With CodeNavigator: AI → MCP → Deep Index → Codebase
+          ✅ With Glue.tools: AI → MCP → Deep Index → Codebase
         </Badge>
         <div className="flex items-center gap-4">
           <Card className="flex-1 p-8 border-2 border-foreground/20 shadow-lg">
@@ -51,7 +51,7 @@ export const MiddleLayerDiagram = () => {
 
           <Card className="flex-1 p-8 border-4 border-accent-blue bg-accent-blue/10 shadow-xl">
             <Database className="h-12 w-12 mb-4 text-accent-blue" />
-            <h4 className="font-bold mb-3 text-lg">CodeNavigator MCP</h4>
+            <h4 className="font-bold mb-3 text-lg">Glue.tools MCP</h4>
             <div className="text-xs font-mono space-y-1.5 text-accent-blue">
               <div>• <span className="font-bold">who_calls()</span></div>
               <div>• <span className="font-bold">impact_of()</span></div>

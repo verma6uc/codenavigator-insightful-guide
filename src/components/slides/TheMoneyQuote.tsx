@@ -7,7 +7,7 @@ export const TheMoneyQuote = () => {
       {/* Main Quote Card */}
       <Card className="p-8 border-l-8 border-l-accent-green bg-accent-green/5">
         <blockquote className="text-2xl leading-relaxed italic mb-6 text-center">
-          "I was about to hire a consultant to document our legacy codebase. <span className="font-bold text-accent-green">$15K quote</span>. CodeNavigator generated the docs in <span className="font-bold text-accent-blue">6 minutes</span>. I'm canceling the consultant."
+          "I was about to hire a consultant to document our legacy codebase. <span className="font-bold text-accent-green">$15K quote</span>. Glue.tools generated the docs in <span className="font-bold text-accent-blue">6 minutes</span>. I'm canceling the consultant."
         </blockquote>
         <div className="text-center">
           <div className="font-bold text-lg">Sarah K.</div>

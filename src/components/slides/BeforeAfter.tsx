@@ -58,7 +58,7 @@ export const BeforeAfter = () => {
                 <div className="flex items-start gap-3 mb-6">
                   <AlertTriangle className="h-8 w-8 text-accent-red flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-xl font-extrabold mb-2">Without CodeNavigator</h3>
+                    <h3 className="text-xl font-extrabold mb-2">Without Glue.tools</h3>
                     <p className="text-xs text-muted-foreground">AI guessing structure</p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export const BeforeAfter = () => {
                 <div className="flex items-start gap-3 mb-6">
                   <CheckCircle2 className="h-8 w-8 text-accent-green flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-xl font-extrabold mb-2">With CodeNavigator</h3>
+                    <h3 className="text-xl font-extrabold mb-2">With Glue.tools</h3>
                     <p className="text-xs text-muted-foreground">AI with MCP tools</p>
                   </div>
                 </div>
