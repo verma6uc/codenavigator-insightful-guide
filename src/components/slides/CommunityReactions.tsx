@@ -64,7 +64,7 @@ export const CommunityReactions = () => {
       </div>
 
       <div className="text-center pt-3 space-y-2">
-        <p className="text-xl font-medium">
+        <p className="text-xl font-bold">
           The feedback was clear:
         </p>
         <p className="text-lg font-bold">
