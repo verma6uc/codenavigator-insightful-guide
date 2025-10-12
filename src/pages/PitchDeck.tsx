@@ -25,6 +25,7 @@ import { TheBiggerPlay } from "@/components/slides/TheBiggerPlay";
 import { FeaturePlanningProblem } from "@/components/slides/FeaturePlanningProblem";
 import { FeaturePlanningWorkflow } from "@/components/slides/FeaturePlanningWorkflow";
 import { FeaturePlanningValue } from "@/components/slides/FeaturePlanningValue";
+import { WhoItsFor } from "@/components/slides/WhoItsFor";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem" },
@@ -45,7 +46,8 @@ const slides = [
   { id: 16, component: FeaturePlanningProblem, title: "Feature Planning Problem", section: "Feature Planning" },
   { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
-  { id: 19, component: ThePathForward, title: "The Path Forward", section: "Traction" },
+  { id: 19, component: WhoItsFor, title: "Who It's For", section: "Traction" },
+  { id: 20, component: ThePathForward, title: "The Path Forward", section: "Traction" },
 ];
 
 const sections = [
