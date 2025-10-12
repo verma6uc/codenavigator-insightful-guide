@@ -38,7 +38,7 @@ export const TheBiggerPlay = () => {
 
           <div className="text-center border-t-2 border-accent-blue/20 pt-6">
             <p className="text-3xl font-bold text-accent-blue">
-              It can PLAN what to build next.
+              It can PLAN HOW to build it.
             </p>
           </div>
         </Card>
