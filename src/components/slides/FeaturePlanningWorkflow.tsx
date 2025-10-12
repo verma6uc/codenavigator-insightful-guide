@@ -16,16 +16,16 @@ const steps = [
     time: "30s",
   },
   {
-    icon: FileText,
-    title: "Get Full Dev Plan",
-    description: "Entities, relationships, API routes, UI components, migration scripts",
-    time: "45s",
-  },
-  {
     icon: CheckCircle,
     title: "Impact Analysis",
-    description: "See what existing code will be affected",
+    description: "See what exists, what conflicts, what patterns to follow",
     time: "15s",
+  },
+  {
+    icon: FileText,
+    title: "Get Full Dev Plan",
+    description: "Entities, relationships, API routes, UI components - all matching your architecture",
+    time: "45s",
   },
 ];
 
