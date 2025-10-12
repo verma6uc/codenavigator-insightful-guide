@@ -5,26 +5,26 @@ const personas = [
   {
     icon: Code,
     role: "Developers",
-    what: "Stop wasting time on feature scoping",
-    outcome: "Get accurate technical specs in minutes, not days"
+    what: "AI that scopes features for you—analyzes your codebase and shows exactly what needs to change, estimates effort, and flags risks",
+    outcome: "No more spending days just to say 'this will take 2 weeks'"
   },
   {
     icon: Target,
     role: "Product Managers",
-    what: "Get reliable engineering estimates without endless meetings",
-    outcome: "Plan roadmaps with confidence and real data"
+    what: "Get accurate engineering estimates without endless meetings—AI analyzes the codebase and tells you what's needed and how long it takes",
+    outcome: "Plan roadmaps with confidence, in minutes not days"
   },
   {
     icon: TrendingUp,
     role: "Engineering Managers",
-    what: "Improve team velocity and predictability",
-    outcome: "Ship 40% faster with fewer surprises"
+    what: "AI generates accurate technical specs and estimates for any feature based on your actual codebase",
+    outcome: "Improve roadmap predictability and ship faster"
   },
   {
     icon: Users,
     role: "CTOs & VPs",
-    what: "Turn feature planning from weeks to minutes",
-    outcome: "Scale engineering without scaling planning overhead"
+    what: "Turn feature planning from weeks to minutes with AI-powered technical scoping",
+    outcome: "Ship 40% faster with accurate estimates and fewer surprises"
   }
 ];
 
