@@ -28,12 +28,12 @@ import { FeaturePlanningValue } from "@/components/slides/FeaturePlanningValue";
 import { WhoItsFor } from "@/components/slides/WhoItsFor";
 
 const slides = [
-  { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem" },
-  { id: 2, component: ProblemQuotes, title: "The Problem, In Their Words", section: "Problem" },
-  { id: 3, component: DIYSolutions, title: "What They're Building (DIY)", section: "Problem" },
-  { id: 4, component: CommunityReactions, title: "The Comments Reveal the Market", section: "Problem" },
-  { id: 5, component: ValidatedPainPoints, title: "The Gap Is Crystal Clear", section: "Problem" },
-  { id: 6, component: WhatTheyWant, title: "What They Actually Want", section: "Problem" },
+  { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem Discovery" },
+  { id: 2, component: ProblemQuotes, title: "The Problem, In Their Words", section: "Problem Discovery" },
+  { id: 3, component: DIYSolutions, title: "What They're Building (DIY)", section: "Problem Discovery" },
+  { id: 4, component: CommunityReactions, title: "The Comments Reveal the Market", section: "Problem Discovery" },
+  { id: 5, component: ValidatedPainPoints, title: "The Gap Is Crystal Clear", section: "Problem Discovery" },
+  { id: 6, component: WhatTheyWant, title: "What They Actually Want", section: "Problem Discovery" },
   { id: 7, component: SolutionHero, title: "So We Built It", section: "Solution" },
   { id: 8, component: MiddleLayerDiagram, title: "The Missing Middle Layer", section: "Solution" },
   { id: 9, component: HowItWorks, title: "How It Works", section: "Solution" },
@@ -51,7 +51,7 @@ const slides = [
 ];
 
 const sections = [
-  { name: "Problem", color: "accent-red", slides: slides.filter(s => s.section === "Problem") },
+  { name: "Problem Discovery", color: "accent-red", slides: slides.filter(s => s.section === "Problem Discovery") },
   { name: "Solution", color: "accent-blue", slides: slides.filter(s => s.section === "Solution") },
   { name: "Feature Planning", color: "accent-purple", slides: slides.filter(s => s.section === "Feature Planning") },
   { name: "Traction", color: "accent-green", slides: slides.filter(s => s.section === "Traction") },
