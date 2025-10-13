@@ -1,26 +1,26 @@
 import { Card } from "@/components/ui/card";
-import { Code2, Database, Network, Boxes } from "lucide-react";
+import { FileSearch, Search, MessageSquare, HelpCircle } from "lucide-react";
 
-const solutions = [
+const painPoints = [
   {
-    icon: Code2,
-    title: "Tree-sitter Parsers",
-    description: "Extract code graphs from raw source files",
+    icon: FileSearch,
+    title: "Documentation Diving",
+    description: "Searching README files and Confluence docs with outdated architecture diagrams",
   },
   {
-    icon: Network,
-    title: "Symbol Maps",
-    description: "File → imports → functions → callers relationships",
+    icon: Search,
+    title: "Grep & Manual Tracing",
+    description: "git grep and 'Find All References' — opening 10+ files to trace one dependency",
   },
   {
-    icon: Boxes,
-    title: "Framework Extractors",
-    description: "Next.js routes, NestJS DI, Django ORM, cron jobs",
+    icon: MessageSquare,
+    title: "Tribal Knowledge Dependency",
+    description: "Slack: 'Hey, does anyone know how X works?' — waiting for senior devs to explain",
   },
   {
-    icon: Database,
-    title: "Postgres + pgvector",
-    description: "Store embeddings and enable semantic search",
+    icon: HelpCircle,
+    title: "Guesswork Estimation",
+    description: "'This feels like a 2-week task' — padding estimates for unknown unknowns",
   },
 ];
 
@@ -29,21 +29,21 @@ export const DIYSolutions = () => {
     <div className="space-y-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">
-          Current State
+          Current State: Manual Code Archaeology
         </h1>
         <p className="text-lg text-muted-foreground">
-          DIY solutions from scratch
+          How developers understand codebases today
         </p>
       </div>
 
       <Card className="p-6 border-2 border-foreground/20 space-y-4">
         <p className="text-base font-medium">
-          Real developers building custom infrastructure:
+          The reality of feature planning:
         </p>
 
         <div className="grid grid-cols-2 gap-3">
-          {solutions.map((solution, index) => {
-            const Icon = solution.icon;
+          {painPoints.map((point, index) => {
+            const Icon = point.icon;
             return (
               <div 
                 key={index}
@@ -53,32 +53,21 @@ export const DIYSolutions = () => {
                   <Icon className="h-4 w-4 text-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-sm mb-0.5">{solution.title}</h3>
-                  <p className="text-xs text-muted-foreground">{solution.description}</p>
+                  <h3 className="font-semibold text-sm mb-0.5">{point.title}</h3>
+                  <p className="text-xs text-muted-foreground">{point.description}</p>
                 </div>
               </div>
             );
           })}
         </div>
-
-        <div className="pt-2 space-y-2">
-          <p className="text-sm font-medium">Plus MCP servers exposing:</p>
-          <div className="flex flex-wrap gap-2">
-            {['who_calls()', 'impact_of()', 'search_code()'].map((method) => (
-              <code key={method} className="px-2 py-1 border border-foreground/30 font-mono text-xs">
-                {method}
-              </code>
-            ))}
-          </div>
-        </div>
       </Card>
 
       <div className="text-center space-y-2">
         <p className="text-xl font-bold">
-          MONTHS of work per developer.
+          HOURS per feature just to understand what needs to change.
         </p>
         <p className="text-base text-muted-foreground">
-          And it only works for their specific tech stack.
+          And estimates are still wrong 60% of the time.
         </p>
       </div>
     </div>
