@@ -25,7 +25,7 @@ import { TheBiggerPlay } from "@/components/slides/TheBiggerPlay";
 import { FeaturePlanningProblem } from "@/components/slides/FeaturePlanningProblem";
 import { FeaturePlanningWorkflow } from "@/components/slides/FeaturePlanningWorkflow";
 import { FeaturePlanningValue } from "@/components/slides/FeaturePlanningValue";
-import { WhoItsFor } from "@/components/slides/WhoItsFor";
+
 import { ProductWalkthroughTitle } from "@/components/slides/ProductWalkthroughTitle";
 import { WalkthroughWorkspaceStats } from "@/components/slides/WalkthroughWorkspaceStats";
 import { WalkthroughCreateWorkspace } from "@/components/slides/WalkthroughCreateWorkspace";
@@ -56,24 +56,22 @@ const slides = [
   { id: 16, component: FeaturePlanningProblem, title: "Feature Planning Problem", section: "Feature Planning" },
   { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
-  { id: 19, component: WhoItsFor, title: "Who It's For", section: "ICP" },
-  { id: 20, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
-  { id: 21, component: WalkthroughWorkspaceStats, title: "Workspace Overview", section: "Product Walkthrough" },
-  { id: 22, component: WalkthroughCreateWorkspace, title: "Create Workspace", section: "Product Walkthrough" },
-  { id: 23, component: WalkthroughProposedFeatures, title: "Proposed Features", section: "Product Walkthrough" },
-  { id: 24, component: WalkthroughAIGeneration, title: "AI Feature Generation", section: "Product Walkthrough" },
-  { id: 25, component: WalkthroughAuditLogSystem, title: "Generated Feature Proposal", section: "Product Walkthrough" },
-  { id: 26, component: WalkthroughEntityDetails, title: "Entity Details & Attributes", section: "Product Walkthrough" },
-  { id: 27, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
-  { id: 28, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
-  { id: 29, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
+  { id: 19, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
+  { id: 20, component: WalkthroughWorkspaceStats, title: "Workspace Overview", section: "Product Walkthrough" },
+  { id: 21, component: WalkthroughCreateWorkspace, title: "Create Workspace", section: "Product Walkthrough" },
+  { id: 22, component: WalkthroughProposedFeatures, title: "Proposed Features", section: "Product Walkthrough" },
+  { id: 23, component: WalkthroughAIGeneration, title: "AI Feature Generation", section: "Product Walkthrough" },
+  { id: 24, component: WalkthroughAuditLogSystem, title: "Generated Feature Proposal", section: "Product Walkthrough" },
+  { id: 25, component: WalkthroughEntityDetails, title: "Entity Details & Attributes", section: "Product Walkthrough" },
+  { id: 26, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
+  { id: 27, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
+  { id: 28, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
 ];
 
 const sections = [
   { name: "Problem Discovery", color: "accent-red", slides: slides.filter(s => s.section === "Problem Discovery") },
   { name: "Solution", color: "accent-blue", slides: slides.filter(s => s.section === "Solution") },
   { name: "Feature Planning", color: "accent-purple", slides: slides.filter(s => s.section === "Feature Planning") },
-  { name: "ICP", color: "accent-green", slides: slides.filter(s => s.section === "ICP") },
   { name: "Product Walkthrough", color: "accent-purple", slides: slides.filter(s => s.section === "Product Walkthrough") },
 ];
 
