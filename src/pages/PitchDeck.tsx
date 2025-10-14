@@ -20,7 +20,7 @@ import { WhatTheyreActuallyDoing } from "@/components/slides/WhatTheyreActuallyD
 import { TheMoneyQuote } from "@/components/slides/TheMoneyQuote";
 import { OrganicGrowth } from "@/components/slides/OrganicGrowth";
 import { WhatWeLearned } from "@/components/slides/WhatWeLearned";
-import { ThePathForward } from "@/components/slides/ThePathForward";
+
 import { TheBiggerPlay } from "@/components/slides/TheBiggerPlay";
 import { FeaturePlanningProblem } from "@/components/slides/FeaturePlanningProblem";
 import { FeaturePlanningWorkflow } from "@/components/slides/FeaturePlanningWorkflow";
@@ -47,7 +47,7 @@ const slides = [
   { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
   { id: 19, component: WhoItsFor, title: "Who It's For", section: "Traction" },
-  { id: 20, component: ThePathForward, title: "The Path Forward", section: "Traction" },
+  
 ];
 
 const sections = [
