@@ -9,6 +9,7 @@ import { ValidatedPainPoints } from "@/components/slides/ValidatedPainPoints";
 import { WhatTheyWant } from "@/components/slides/WhatTheyWant";
 import { SolutionHero } from "@/components/slides/SolutionHero";
 import { MiddleLayerDiagram } from "@/components/slides/MiddleLayerDiagram";
+import { AISoftwareLifecycle } from "@/components/slides/AISoftwareLifecycle";
 import { HowItWorks } from "@/components/slides/HowItWorks";
 import { MCPTools } from "@/components/slides/MCPTools";
 import { BeforeAfter } from "@/components/slides/BeforeAfter";
@@ -50,30 +51,31 @@ const slides = [
   { id: 6, component: WhatTheyWant, title: "What They Actually Want", section: "Problem Discovery" },
   { id: 7, component: SolutionHero, title: "So We Built It", section: "Solution" },
   { id: 8, component: MiddleLayerDiagram, title: "The Missing Middle Layer", section: "Solution" },
-  { id: 9, component: HowItWorks, title: "How It Works", section: "Solution" },
-  { id: 10, component: MCPTools, title: "MCP Tools", section: "Solution" },
-  { id: 11, component: BeforeAfter, title: "Before vs After", section: "Solution" },
-  { id: 12, component: WhatTheyreActuallyDoing, title: "What They're Actually Doing", section: "Solution" },
-  { id: 13, component: IndexingArchitecture, title: "Deep Indexing Architecture", section: "Solution" },
-  { id: 14, component: TechnicalDifferentiation, title: "Technical Differentiation", section: "Solution" },
-  { id: 15, component: TheBiggerPlay, title: "The Bigger Play", section: "Feature Planning" },
-  { id: 16, component: FeaturePlanningProblem, title: "Feature Planning Problem", section: "Feature Planning" },
-  { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
-  { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
-  { id: 19, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
-  { id: 20, component: WalkthroughWorkspaceStats, title: "Workspace Overview", section: "Product Walkthrough" },
-  { id: 21, component: WalkthroughCreateWorkspace, title: "Create Workspace", section: "Product Walkthrough" },
-  { id: 22, component: WalkthroughProposedFeatures, title: "Proposed Features", section: "Product Walkthrough" },
-  { id: 23, component: WalkthroughAIGeneration, title: "AI Feature Generation", section: "Product Walkthrough" },
-  { id: 24, component: WalkthroughAuditLogSystem, title: "Generated Feature Proposal", section: "Product Walkthrough" },
-  { id: 25, component: WalkthroughEntityDetails, title: "Entity Details & Attributes", section: "Product Walkthrough" },
-  { id: 26, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
-  { id: 27, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
-  { id: 28, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
-  { id: 29, component: WalkthroughWorkspaceDetails, title: "Workspace Details", section: "Product Walkthrough" },
-  { id: 30, component: WalkthroughDashboard, title: "Dashboard", section: "Product Walkthrough" },
-  { id: 31, component: WalkthroughBranches, title: "Branch Management", section: "Product Walkthrough" },
-  { id: 32, component: WalkthroughAddProject, title: "Add Project", section: "Product Walkthrough" },
+  { id: 9, component: AISoftwareLifecycle, title: "Where does Glue.Tools play in AI software development lifecycle", section: "Solution" },
+  { id: 10, component: HowItWorks, title: "How It Works", section: "Solution" },
+  { id: 11, component: MCPTools, title: "MCP Tools", section: "Solution" },
+  { id: 12, component: BeforeAfter, title: "Before vs After", section: "Solution" },
+  { id: 13, component: WhatTheyreActuallyDoing, title: "What They're Actually Doing", section: "Solution" },
+  { id: 14, component: IndexingArchitecture, title: "Deep Indexing Architecture", section: "Solution" },
+  { id: 15, component: TechnicalDifferentiation, title: "Technical Differentiation", section: "Solution" },
+  { id: 16, component: TheBiggerPlay, title: "The Bigger Play", section: "Feature Planning" },
+  { id: 17, component: FeaturePlanningProblem, title: "Feature Planning Problem", section: "Feature Planning" },
+  { id: 18, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
+  { id: 19, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
+  { id: 20, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
+  { id: 21, component: WalkthroughWorkspaceStats, title: "Workspace Overview", section: "Product Walkthrough" },
+  { id: 22, component: WalkthroughCreateWorkspace, title: "Create Workspace", section: "Product Walkthrough" },
+  { id: 23, component: WalkthroughProposedFeatures, title: "Proposed Features", section: "Product Walkthrough" },
+  { id: 24, component: WalkthroughAIGeneration, title: "AI Feature Generation", section: "Product Walkthrough" },
+  { id: 25, component: WalkthroughAuditLogSystem, title: "Generated Feature Proposal", section: "Product Walkthrough" },
+  { id: 26, component: WalkthroughEntityDetails, title: "Entity Details & Attributes", section: "Product Walkthrough" },
+  { id: 27, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
+  { id: 28, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
+  { id: 29, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
+  { id: 30, component: WalkthroughWorkspaceDetails, title: "Workspace Details", section: "Product Walkthrough" },
+  { id: 31, component: WalkthroughDashboard, title: "Dashboard", section: "Product Walkthrough" },
+  { id: 32, component: WalkthroughBranches, title: "Branch Management", section: "Product Walkthrough" },
+  { id: 33, component: WalkthroughAddProject, title: "Add Project", section: "Product Walkthrough" },
 ];
 
 const sections = [
