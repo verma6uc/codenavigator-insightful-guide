@@ -26,6 +26,7 @@ import { FeaturePlanningProblem } from "@/components/slides/FeaturePlanningProbl
 import { FeaturePlanningWorkflow } from "@/components/slides/FeaturePlanningWorkflow";
 import { FeaturePlanningValue } from "@/components/slides/FeaturePlanningValue";
 import { WhoItsFor } from "@/components/slides/WhoItsFor";
+import { ProductWalkthroughTitle } from "@/components/slides/ProductWalkthroughTitle";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem Discovery" },
@@ -47,6 +48,7 @@ const slides = [
   { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
   { id: 19, component: WhoItsFor, title: "Who It's For", section: "Traction" },
+  { id: 20, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
   
 ];
 
@@ -55,6 +57,7 @@ const sections = [
   { name: "Solution", color: "accent-blue", slides: slides.filter(s => s.section === "Solution") },
   { name: "Feature Planning", color: "accent-purple", slides: slides.filter(s => s.section === "Feature Planning") },
   { name: "Traction", color: "accent-green", slides: slides.filter(s => s.section === "Traction") },
+  { name: "Product Walkthrough", color: "accent-purple", slides: slides.filter(s => s.section === "Product Walkthrough") },
 ];
 
 const PitchDeck = () => {
