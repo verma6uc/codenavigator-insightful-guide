@@ -47,7 +47,7 @@ const slides = [
   { id: 16, component: FeaturePlanningProblem, title: "Feature Planning Problem", section: "Feature Planning" },
   { id: 17, component: FeaturePlanningWorkflow, title: "Feature Planning Workflow", section: "Feature Planning" },
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
-  { id: 19, component: WhoItsFor, title: "Who It's For", section: "Traction" },
+  { id: 19, component: WhoItsFor, title: "Who It's For", section: "ICP" },
   { id: 20, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
   
 ];
@@ -56,7 +56,7 @@ const sections = [
   { name: "Problem Discovery", color: "accent-red", slides: slides.filter(s => s.section === "Problem Discovery") },
   { name: "Solution", color: "accent-blue", slides: slides.filter(s => s.section === "Solution") },
   { name: "Feature Planning", color: "accent-purple", slides: slides.filter(s => s.section === "Feature Planning") },
-  { name: "Traction", color: "accent-green", slides: slides.filter(s => s.section === "Traction") },
+  { name: "ICP", color: "accent-green", slides: slides.filter(s => s.section === "ICP") },
   { name: "Product Walkthrough", color: "accent-purple", slides: slides.filter(s => s.section === "Product Walkthrough") },
 ];
 
