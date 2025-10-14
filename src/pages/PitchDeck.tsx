@@ -27,6 +27,15 @@ import { FeaturePlanningWorkflow } from "@/components/slides/FeaturePlanningWork
 import { FeaturePlanningValue } from "@/components/slides/FeaturePlanningValue";
 import { WhoItsFor } from "@/components/slides/WhoItsFor";
 import { ProductWalkthroughTitle } from "@/components/slides/ProductWalkthroughTitle";
+import { WalkthroughWorkspaceStats } from "@/components/slides/WalkthroughWorkspaceStats";
+import { WalkthroughCreateWorkspace } from "@/components/slides/WalkthroughCreateWorkspace";
+import { WalkthroughProposedFeatures } from "@/components/slides/WalkthroughProposedFeatures";
+import { WalkthroughAIGeneration } from "@/components/slides/WalkthroughAIGeneration";
+import { WalkthroughAuditLogSystem } from "@/components/slides/WalkthroughAuditLogSystem";
+import { WalkthroughEntityDetails } from "@/components/slides/WalkthroughEntityDetails";
+import { WalkthroughRefinementHistory } from "@/components/slides/WalkthroughRefinementHistory";
+import { WalkthroughSuggestedFeatures } from "@/components/slides/WalkthroughSuggestedFeatures";
+import { WalkthroughMCPIntegration } from "@/components/slides/WalkthroughMCPIntegration";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem Discovery" },
@@ -49,7 +58,15 @@ const slides = [
   { id: 18, component: FeaturePlanningValue, title: "Feature Planning Value", section: "Feature Planning" },
   { id: 19, component: WhoItsFor, title: "Who It's For", section: "ICP" },
   { id: 20, component: ProductWalkthroughTitle, title: "Product Walkthrough", section: "Product Walkthrough" },
-  
+  { id: 21, component: WalkthroughWorkspaceStats, title: "Workspace Overview", section: "Product Walkthrough" },
+  { id: 22, component: WalkthroughCreateWorkspace, title: "Create Workspace", section: "Product Walkthrough" },
+  { id: 23, component: WalkthroughProposedFeatures, title: "Proposed Features", section: "Product Walkthrough" },
+  { id: 24, component: WalkthroughAIGeneration, title: "AI Feature Generation", section: "Product Walkthrough" },
+  { id: 25, component: WalkthroughAuditLogSystem, title: "Generated Feature Proposal", section: "Product Walkthrough" },
+  { id: 26, component: WalkthroughEntityDetails, title: "Entity Details & Attributes", section: "Product Walkthrough" },
+  { id: 27, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
+  { id: 28, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
+  { id: 29, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
 ];
 
 const sections = [
