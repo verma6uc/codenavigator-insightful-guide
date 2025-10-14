@@ -36,6 +36,10 @@ import { WalkthroughEntityDetails } from "@/components/slides/WalkthroughEntityD
 import { WalkthroughRefinementHistory } from "@/components/slides/WalkthroughRefinementHistory";
 import { WalkthroughSuggestedFeatures } from "@/components/slides/WalkthroughSuggestedFeatures";
 import { WalkthroughMCPIntegration } from "@/components/slides/WalkthroughMCPIntegration";
+import { WalkthroughWorkspaceDetails } from "@/components/slides/WalkthroughWorkspaceDetails";
+import { WalkthroughDashboard } from "@/components/slides/WalkthroughDashboard";
+import { WalkthroughBranches } from "@/components/slides/WalkthroughBranches";
+import { WalkthroughAddProject } from "@/components/slides/WalkthroughAddProject";
 
 const slides = [
   { id: 1, component: RedditHook, title: "We Found This on Reddit", section: "Problem Discovery" },
@@ -66,6 +70,10 @@ const slides = [
   { id: 26, component: WalkthroughRefinementHistory, title: "Refinement History", section: "Product Walkthrough" },
   { id: 27, component: WalkthroughSuggestedFeatures, title: "AI-Suggested Features", section: "Product Walkthrough" },
   { id: 28, component: WalkthroughMCPIntegration, title: "MCP Integration Setup", section: "Product Walkthrough" },
+  { id: 29, component: WalkthroughWorkspaceDetails, title: "Workspace Details", section: "Product Walkthrough" },
+  { id: 30, component: WalkthroughDashboard, title: "Dashboard", section: "Product Walkthrough" },
+  { id: 31, component: WalkthroughBranches, title: "Branch Management", section: "Product Walkthrough" },
+  { id: 32, component: WalkthroughAddProject, title: "Add Project", section: "Product Walkthrough" },
 ];
 
 const sections = [
